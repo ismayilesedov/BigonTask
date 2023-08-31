@@ -93,9 +93,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="wwwroot\admin\assets\images\widget\amchart\image\" />
+    <Folder Include="wwwroot\libs\" />
+    <Folder Include="wwwroot\uploads\images\" />
   </ItemGroup>
 
   <ItemGroup>

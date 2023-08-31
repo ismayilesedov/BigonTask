@@ -1,4 +1,4 @@
-﻿@model
+﻿@model IEnumerable<Color>
 @{
     ViewData["Title"] = "Index";
 }
@@ -44,31 +44,38 @@
                 <table class="table table-inverse">
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
+                            <th>Hex Code</th>
+                            <th>Name</th>
+                           
+                            <th class="operational">
+                                <a asp-action="create" class="btn btn-success">
+                                    <i class="fa fa-plus"></i>
+                                </a>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@@twitter</td>
-                        </tr>
+                        @foreach(var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <span coloroid style="background-color:@item.HexCode">  </span>
+                                </td>
+                                <td>@item.Name</td>
+                                <td class="operational">
+                                    <a asp-action="details" asp-route-id="@item.Id" class="btn btn-info">
+                                        <i class="fa fa-eye"></i>
+                                    </a>
+
+                                    <a asp-action="edit" asp-route-id="@item.Id" class="btn btn-warning">
+                                        <i class="fa fa-pencil"></i>
+                                    </a>
+                                    <a onclick="removeEntity(@item.Id,'@item.Name')" class="btn btn-danger">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
                     </tbody>
                 </table>
             </div>
@@ -77,3 +84,26 @@
 
 
 </div>
+
+
+   @section addjs{
+    <script src="~/libs/sweetalert/sweetalert.min.js"></script>
+    <script>
+        function removeEntity(Id, Name) {
+            toastr.success('Message', 'Title');
+            swal({
+                title: "Are you sure?",
+                text: "You will not be able to recover this imaginary file!",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Yes, delete it!",
+                closeOnConfirm: false
+            },
+                function () {
+                    swal("Deleted!", "Your imaginary file has been deleted.", "success");
+                });
+
+        }
+    </script>
+  }

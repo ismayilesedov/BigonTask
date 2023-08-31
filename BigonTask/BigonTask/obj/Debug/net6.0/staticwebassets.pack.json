@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\DELL\\Desktop\\BigOn FrontToBack\\BigonTask\\BigonTask\\wwwroot\\admin\\assets\\css\\Additional.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\Additional.css"
+    },
+    {
       "Id": "C:\\Users\\DELL\\Desktop\\BigOn FrontToBack\\BigonTask\\BigonTask\\wwwroot\\admin\\assets\\css\\component.css",
       "PackagePath": "staticwebassets\\admin\\assets\\css\\component.css"
     },
@@ -1947,6 +1951,10 @@
     {
       "Id": "C:\\Users\\DELL\\Desktop\\BigOn FrontToBack\\BigonTask\\BigonTask\\wwwroot\\admin\\assets\\js\\SmoothScroll.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\SmoothScroll.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\BigOn FrontToBack\\BigonTask\\BigonTask\\wwwroot\\admin\\assets\\js\\Toastr.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\Toastr.js"
     },
     {
       "Id": "C:\\Users\\DELL\\Desktop\\BigOn FrontToBack\\BigonTask\\BigonTask\\wwwroot\\admin\\assets\\js\\animation.js",
@@ -10351,6 +10359,30 @@
     {
       "Id": "C:\\Users\\DELL\\Desktop\\BigOn FrontToBack\\BigonTask\\BigonTask\\wwwroot\\cdn.shopify.com\\shopifycloud\\storefront-recaptcha-v3\\v0.6\\index.js",
       "PackagePath": "staticwebassets\\cdn.shopify.com\\shopifycloud\\storefront-recaptcha-v3\\v0.6\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\BigOn FrontToBack\\BigonTask\\BigonTask\\wwwroot\\libs\\sweetalert\\sweetalert.min.js",
+      "PackagePath": "staticwebassets\\libs\\sweetalert\\sweetalert.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\BigOn FrontToBack\\BigonTask\\BigonTask\\wwwroot\\libs\\toastr.js\\toastr.css",
+      "PackagePath": "staticwebassets\\libs\\toastr.js\\toastr.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\BigOn FrontToBack\\BigonTask\\BigonTask\\wwwroot\\libs\\toastr.js\\toastr.js.map",
+      "PackagePath": "staticwebassets\\libs\\toastr.js\\toastr.js.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\BigOn FrontToBack\\BigonTask\\BigonTask\\wwwroot\\libs\\toastr.js\\toastr.min.css",
+      "PackagePath": "staticwebassets\\libs\\toastr.js\\toastr.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\BigOn FrontToBack\\BigonTask\\BigonTask\\wwwroot\\libs\\toastr.js\\toastr.min.js",
+      "PackagePath": "staticwebassets\\libs\\toastr.js\\toastr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\BigOn FrontToBack\\BigonTask\\BigonTask\\wwwroot\\uploads\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\1.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BigonTask.Microsoft.AspNetCore.StaticWebAssets.props",

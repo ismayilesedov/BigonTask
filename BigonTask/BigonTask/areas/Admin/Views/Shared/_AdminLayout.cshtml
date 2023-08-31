@@ -18,6 +18,7 @@
         content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
     <meta name="author" content="#">
     <!-- Favicon icon -->
+
     <link rel="icon" href="~/admin/assets/images/favicon.ico" type="image/x-icon">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
@@ -27,7 +28,10 @@
     <link rel="stylesheet" type="text/css" href="~/admin/assets/icon/feather/css/feather.css">
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="~/admin/assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="~/admin/assets/css/jquery.mCustomScrollbar.css">
+      <link rel="stylesheet" type="text/css" href="~/admin/assets/css/Additional.css">
+  
+      <link rel="stylesheet" type="text/css" href="~/admin/assets/css/jquery.mCustomScrollbar.css">
+    @RenderSection("addcss",required:false)
 </head>
 <body>
    <partial name="_Preloader"/>
@@ -329,7 +333,11 @@
     <!-- custom js -->
     <script src="~/admin/assets/js/vartical-layout.min.js"></script>
     <script type="text/javascript" src="~/admin/assets/pages/dashboard/custom-dashboard.js"></script>
+    
+    <script src="https://kit.fontawesome.com/0c3ac26755.js" crossorigin="anonymous"></script>
+ 
     <script type="text/javascript" src="~/admin/assets/js/script.min.js"></script>
-
+    <script src="~/admin/assets/js/toastr.js"></script>
+    @RenderSection("addjs",required:false)
 </body>
 </html>

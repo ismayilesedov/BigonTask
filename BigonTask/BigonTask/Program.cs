@@ -21,6 +21,8 @@ namespace BigonTask
                 builder.Configuration.GetSection("emailAccount").Bind(cfg);
             });
             builder.Services.AddSingleton<IEmailService, EmailService>();
+            builder.Services.AddSingleton<IDateTimeService, DateTimeService>();
+            builder.Services.AddScoped<IIdentityService, IdentityService>();
             var app = builder.Build();
             app.UseStaticFiles();
             app.UseRouting();

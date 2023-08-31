@@ -11,7 +11,7 @@ namespace BigonTask.Models.Persistence.Configurations
             builder.Property(m => m.Name).IsRequired().HasColumnType("nvarchar").HasMaxLength(100);
             builder.Property(m => m.CreatedBy).IsRequired().HasColumnType("int");
             builder.Property(m => m.CreatedAt).IsRequired().HasColumnType("datetime");
-            builder.Property(m => m.LastModifiedBy).IsRequired().HasColumnType("int");
+            builder.Property(m => m.LastModifiedBy).HasColumnType("int");
             builder.HasKey(m => m.Id);
             builder.ToTable("Colors");
         }
